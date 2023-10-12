@@ -1,0 +1,32 @@
+/* start from over larg devises *//* starting grid system from All devises */
+@media(min-width: 1200px) {
+    container {
+        max-width: 1140px;
+        margin: auto;
+    }
+}
+
+/* start from larg devises */
+@media(min-width: 992px) {
+    container {
+        max-width: 960px;
+        margin: auto;
+    }
+}
+
+/* start from mediam devises */
+@media(min-width: 768px) {
+    container {
+        max-width: 720px;
+        margin: auto;
+    }
+}
+
+/* start from small devises */
+@media(min-width: 576px) {
+    container {
+        max-width: 540px;
+        margin: auto;
+    }
+}
+
