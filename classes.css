@@ -41,6 +41,13 @@ input {
     justify-content: space-between;
 }
 
+
+.grid-boxes-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+
 /* margin top */
 .mt-10px {
     margin-top: 10px;
@@ -97,10 +104,32 @@ input {
     margin-left: 40px;
 }
 
-.grid-boxes-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 40px;
+.text-10px {
+    font-size: 10px
+}
+
+.text-12px {
+    font-size: 12px
+}
+
+.text-14px {
+    font-size: 14px
+}
+
+.text-20px {
+    font-size: 20px
+}
+
+.text-30px {
+    font-size: 30px
+}
+
+.text-40px {
+    font-size: 40px
+}
+
+.text-50px {
+    font-size: 50px
 }
 
 .color-green {
