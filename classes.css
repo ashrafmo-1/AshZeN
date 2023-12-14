@@ -12,6 +12,7 @@ input {
     outline: none !important;
 }
 
+/* btns */
 .btn {
     padding: 2px 5px !important;
     border: none !important;
@@ -42,10 +43,26 @@ input {
 }
 
 
-.grid-boxes-columns {
+.grid-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
+}
+/* margin */
+.m-0px {
+    margin: 0;
+}
+.m-10px {
+    margin: 10px;
+}
+.m-20px {
+    margin: 20px;
+}
+.m-30px {
+    margin: 30px;
+}
+.m-40px {
+    margin: 40px;
 }
 
 /* margin top */
@@ -104,6 +121,73 @@ input {
     margin-left: 40px;
 }
 
+/* padding */
+
+.p-0px {
+    padding: 0;
+}
+.p-10px {
+    padding: 10px;
+}
+.p-20px {
+    padding: 20px;
+}
+.p-30px {
+    padding: 30px;
+}
+.p-40px {
+    padding: 40px;
+}
+.pt-10px {
+    padding-top: 10px;
+}
+.pt-20px {
+    padding-top: 20px;
+}
+.pt-30px {
+    padding-top: 30px;
+}
+.pt-40px {
+    padding-top: 40px;
+}
+.pb-10px{
+    padding-bottom: 10px;
+}
+.pb-20px{
+    padding-bottom: 20px;
+}
+.pb-30px{
+    padding-bottom: 30px;
+}
+.pb-40px{
+    padding-bottom: 40px;
+}
+.pr-10px{
+    padding-right: 10px;
+}
+.pr-20px{
+    padding-right: 20px;
+}
+.pr-30px{
+    padding-right: 30px;
+}
+.pr-40px{
+    padding-right: 40px;
+}
+.pl-10px{
+    padding-left: 10px;
+}
+.pl-20px{
+    padding-left: 20px;
+}
+.pl-30px{
+    padding-left: 30px;
+}
+.pl-40px{
+    padding-left: 40px;
+}
+
+/* start font size */
 .text-10px {
     font-size: 10px
 }
@@ -131,7 +215,7 @@ input {
 .text-50px {
     font-size: 50px
 }
-
+/* start colors */
 .color-green {
     color: green !important;
 }
