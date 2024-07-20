@@ -1,0 +1,33 @@
+import React from 'react';
+import useAuthentication from "../../Authentication/useAuthentication";
+
+const Login = () => {
+    const {formik, loading} = useAuthentication();
+    return (
+        <section className={'loginAuth h-dvh flex justify-center items-center'} dir={'rtl'}>
+            <form name="login" className={'shadow-2xl py-10 px-16 rounded-3xl'} style={{width: 600}}
+                  onSubmit={formik.handleSubmit} layout="vertical">
+                <img src={'./assets/login.jpg'} alt={'Login'} width={200} className={'m-auto'} />
+                <h2 className={'text-4xl mt-5'}>اهلا بعودتك</h2>
+                <p className={'mb-8 mt-2 text-gray-400'}>قم بتسجيل دخولك الي لوحه تحكم متجر صحتك ثروتك</p>
+                <div className={'flex flex-col mb-5'}>
+                    <label className={'text-right mb-1'}> البريد الالكتروني</label>
+                    <input placeholder="ادخل بريدك الالكتروني" name={'email'} value={formik.values.email} onChange={formik.handleChange} type={'text'}
+                           className={'border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full'}
+                    />
+                </div>
+                <div className={'flex flex-col mb-5'}>
+                    <label className={'text-right mb-1'}>كلمه المرور</label>
+                    <input placeholder="ادخل كلمه المرور" name={'password'} value={formik.values.password} onChange={formik.handleChange} type={'password'}
+                           className={'border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full'}
+                    />
+                </div>
+                    <button className="bg-blue-600 text-white text-xl sign mt-2 rounded p-3 d-block w-100 text-center fs-3 fw-bold">
+                        {loading ? ( <p>جاري تسجيل الدخول.....</p> ) : ( "تسجيل الدخول" )}
+                    </button>
+            </form>
+        </section>
+    )
+}
+
+export default Login;
